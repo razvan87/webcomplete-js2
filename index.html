@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+
+    <div id="confirmation" class="confirmation hidden">
+        <span>✔ Thank you for contacting us, <strong id="userName"></strong></span>
+        <button id="closeBanner">✕</button>
+    </div>
+
+    <div class="outer-box">
+        <div class="form-container">
+            <form id="contactForm" novalidate>
+                <input type="text" id="firstName" placeholder="First Name" required />
+                <input type="text" id="lastName" placeholder="Last Name" required />
+
+                <div class="gender">
+                    <label>Gender</label>
+                    <label><input type="radio" name="gender" value="M" required /> M</label>
+                    <label><input type="radio" name="gender" value="F" required/> F</label>
+                </div>
+
+                <textarea id="message" placeholder="Your message here..." required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="image-box">
+                <img src="images/Wavy_Bus-40_Single-02.jpg" alt="placeholder" />
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
